@@ -109,16 +109,17 @@ a [class*=" icon-"] {
   font-size: 2em;
 }
 
-#main-flexslider {
-  font-size: 3em;
-} /* makes the down arrow bigger above the fold */
-
 .icon-2x.icon-border {
   border-width: 2px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+
+#main-flexslider .icon-2x {
+  font-size: 4em;
+} /* so down arrow above the fold is bigger */
+
 .icon-3x {
   font-size: 3em;
 }
@@ -1093,12 +1094,13 @@ a .icon-flip-vertical:before {
   content: "\f105";
 }
 .icon-angle-up:before {
-  content: "";
-} /* removed /f106 so that only the down-arrow shows up */
+  content: "\f107";
+} /* up is actually f106. this code moves the down arrow up, so it has a better chance of showing above the fold */
 
 .icon-angle-down:before {
-  content: "\f107";
-}
+  content: "";
+} /* removed for clarity */
+
 .icon-desktop:before {
   content: "\f108";
 }
