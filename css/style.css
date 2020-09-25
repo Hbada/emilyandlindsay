@@ -17,7 +17,7 @@ CONTENTS:
 06 Footer
 07 Icons
 08 Buttons
-09 Media queries 
+09 Media queries
 ===========================
 */
 /* Import css */
@@ -91,7 +91,7 @@ a.scrollup {
 a.scrollup:hover,a.scrollup:active,a.scrollup:focus {
 	opacity:1;
 	text-decoration:none;
-	-webkit-transition: all 400ms ease-out 0s;	
+	-webkit-transition: all 400ms ease-out 0s;
 	   -moz-transition: all 400ms ease-out 0s;
 		 -o-transition: all 400ms ease-out 0s;
 		    transition: all 400ms ease-out 0s;
@@ -126,7 +126,6 @@ a.scrollup i:hover {
 	margin-bottom:0;
 }
 
-
 /*---------- forms ----------*/
 
 input[type=text], input[type=submit], textarea {
@@ -148,6 +147,7 @@ input, button, select, textarea {
 p {
 	line-height: 1.6em;
 	margin: 0 0 10px 0;
+	font-weight: 400;
 }
 
 blockquote {
@@ -162,13 +162,13 @@ blockquote.large {
 	line-height:1.1em;
 }
 blockquote.large:before {
-	font-size:64px;
+	font-size:3rem;
 	font-family: FontAwesome;
 	content: "\f10d";
 	margin-right:20px;
 }
 
-blockquote cite 						{ display:block; font-size:12px;}
+blockquote cite 						{ display:block; font-size: 1rem;}
 blockquote cite:before 					{ content:"\2014 \0020"; }
 blockquote cite a,
 blockquote cite a:visited,
@@ -279,7 +279,7 @@ h2.pagetitle {
 .navbar .brand {
 	margin-left:0;
 	padding: 0;
-	margin-top: 1.05em;
+	margin-top: 1.15em;
 }
 .navbar .brand a {
 	padding: 0;
@@ -309,12 +309,12 @@ h2.pagetitle {
 	overflow:hidden;
 }
 #menu-main {
-	margin-top: 1.125em;
+	margin-top: 1em;
 }
 ul#menu-main > li > a {
 	font-weight: 600;
 	color: #fff;
-	font-size:14px;
+	font-size:1.4rem;
 	text-transform:uppercase;
 }
 ul#menu-main > li > a:hover {
@@ -383,7 +383,7 @@ header .logo {
 	margin-bottom: 0px;
 	text-align: center;
 	line-height: 1;
-	color:#fff;
+	color: rgb(245,245,245,.8);
 }
 #main-flexslider.flexslider {
 		margin:0;
@@ -481,6 +481,22 @@ section.spacer {
 	color:#fff;
 }
 
+.spacer.pink, .section.pink {
+	background: #ff66c9;
+}
+
+footer .pink, .pinkIcon {
+	color: #ff66c9;
+}
+
+section h4.pinkText {
+	color: #ff66c9;
+}
+
+.greyText {
+	color: #414141;
+}
+
 .spacer.yellow,.section.yellow  {
 	background:#ffe873;
 }
@@ -492,14 +508,14 @@ section.spacer.bg2 {
 	background: url(../img/bg/bg-2.jpg) 50% 0 no-repeat fixed;
 	width:100%;
 	height:auto;
-	margin:0;	
+	margin:0;
 }
 
 section.spacer.bg3 {
 	background: url(../img/bg/bg-3.jpg) 50% 0 no-repeat fixed;
 	width:100%;
 	height:auto;
-	margin:0;	
+	margin:0;
 }
 
 section.spacer blockquote.large:before {
@@ -508,9 +524,8 @@ section.spacer blockquote.large:before {
 }
 
 section.spacer blockquote cite {
-	color:#555;
+	color:#333;
 }
-
 
 
 /* === section works === */
@@ -765,7 +780,7 @@ section#blog {
 
 .home-post {
 	background:#fff;
-	
+
 }
 
 .home-post:hover {
@@ -1283,7 +1298,7 @@ i.icon-white {
 /* =========================================================
 08. Buttons
 ============================================================ */
- 
+
 .btn {
 	color: #fff;
 	text-shadow: none;
@@ -1555,6 +1570,9 @@ i.icon-white {
 	height: auto;
 }
 
+
+
+
 /* =========================================================
 09. Media queries
 ============================================================ */
@@ -1566,28 +1584,28 @@ i.icon-white {
 		padding-right:0;
 		padding:0;
 	}
-	
+
 	.navbar-inner {
 	 padding-right: 20px;
-	 padding-left: 20px;	
+	 padding-left: 20px;
 	}
-	
+
 	.navbar-inner h1.brand {
 		margin-left:20px;
 	}
-	
+
 	.navbar-inner .btn-navbar {
 		margin:20px 20px 0;
 	}
-	
+
 	.container {
 	 padding-right: 20px;
 	 padding-left: 20px;
-	}	
+	}
 	.navbar-inverse .navbar-inner {
 		padding:0 0 30px;
 	}
-	
+
 	.nav-collapse {
 		text-align:center;
 		width:100%;
@@ -1603,25 +1621,25 @@ i.icon-white {
 	}
 	.navbar-inner {
 	 padding-right: 20px;
-	 padding-left: 20px;	
+	 padding-left: 20px;
 	}
-	
+
 	.navbar-inner h1.brand {
 		margin-left:20px;
 	}
-	
+
 	.navbar-inner .btn-navbar {
 		margin:20px 20px 0;
 	}
-	
+
 	.container {
 	 padding-right: 20px;
 	 padding-left: 20px;
-	}	
+	}
 	.navbar-inverse .navbar-inner {
 		padding:0 20px 30px;
 	}
-	
+
 	.nav-collapse {
 		text-align:center;
 		width:100%;
@@ -1630,7 +1648,7 @@ i.icon-white {
 		width: 25%;
 	}
 }
-    
+
     /* Smaller screens ----------- */
 @media (max-width : 480px) {
 	#header-wrapper {
@@ -1650,7 +1668,7 @@ i.icon-white {
 	}
 
 }
-    
+
     /* Smartphones (portrait and landscape) ----------- */
 @media only screen  and (min-device-width : 320px)  and (max-device-width : 480px) {
 
@@ -1677,10 +1695,10 @@ i.icon-white {
  section#services h2, section#services ul {
  text-align: center;
 }
-		
+
 
 /* team */
-		
+
 #team .team-thumb {
  margin-right: auto;
  margin-left: auto;
@@ -1695,7 +1713,7 @@ i.icon-white {
  margin-left: auto;
  margin-right: auto;
 }
-		
+
 /* Contact Form */
 	#contact-form {
 		overflow: hidden;
