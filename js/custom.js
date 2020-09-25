@@ -55,13 +55,13 @@ jQuery(document).ready(function($) {
             }
         });
 
-        $('.flyLeft').bind('inview', function (event, visible) {
+        $('.flyleft').bind('inview', function (event, visible) {
             if (visible === true) {
                 $(this).addClass('animated fadeInLeftBig');
             }
         });
 
-        $('.flyRight').bind('inview', function (event, visible) {
+        $('.flyright').bind('inview', function (event, visible) {
             if (visible === true) {
                 $(this).addClass('animated fadeInRightBig');
             }
