@@ -108,6 +108,11 @@ a [class*=" icon-"] {
 .icon-2x {
   font-size: 2em;
 }
+
+#main-flexslider {
+  font-size: 3em;
+} /* makes the down arrow bigger above the fold */
+
 .icon-2x.icon-border {
   border-width: 2px;
   -webkit-border-radius: 4px;
@@ -1088,8 +1093,9 @@ a .icon-flip-vertical:before {
   content: "\f105";
 }
 .icon-angle-up:before {
-  content: "\f106";
-}
+  content: "";
+} /* removed /f106 so that only the down-arrow shows up */
+
 .icon-angle-down:before {
   content: "\f107";
 }
