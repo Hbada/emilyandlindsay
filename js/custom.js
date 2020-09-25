@@ -49,7 +49,7 @@ jQuery(document).ready(function($) {
 
     if (iOS === false) {
 
-        $('.flyIn').bind('inview', function (event, visible) {
+        $('.flyin').bind('inview', function (event, visible) {
             if (visible === true) {
                 $(this).addClass('animated fadeInUp');
             }
